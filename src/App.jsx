@@ -47,6 +47,7 @@ function App() {
       <div className="header">
         <h1>Crewmates</h1>
         <h2>Browse, Add, Edit, and Delete Future Crewmates!</h2>
+        <p>Total Crewmates: {data.length}</p>
         <Link to="/">
           <button>Browse Crewmates</button>
         </Link>
