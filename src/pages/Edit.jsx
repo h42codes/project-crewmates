@@ -42,13 +42,53 @@ const Edit = ({ data }) => {
         />
         <br />
         <label htmlFor="color">Color</label>
-        <input
-          type="text"
-          id="color"
-          name="color"
-          value={crew.color}
-          onChange={handleChange}
-        />
+        <div className="radio-container">
+          <input
+            type="radio"
+            id="red"
+            name="color"
+            value="red"
+            onChange={handleChange}
+            checked={crew.color === "red"}
+          />
+          <label htmlFor="red">Red</label>
+          <input
+            type="radio"
+            id="yellow"
+            name="color"
+            value="yellow"
+            onChange={handleChange}
+            checked={crew.color === "yellow"}
+          />
+          <label htmlFor="yellow">Yellow</label>
+          <input
+            type="radio"
+            id="blue"
+            name="color"
+            value="blue"
+            onChange={handleChange}
+            checked={crew.color === "blue"}
+          />
+          <label htmlFor="blue">Blue</label>
+          <input
+            type="radio"
+            id="white"
+            name="color"
+            value="white"
+            onChange={handleChange}
+            checked={crew.color === "white"}
+          />
+          <label htmlFor="white">White</label>
+          <input
+            type="radio"
+            id="black"
+            name="color"
+            value="black"
+            onChange={handleChange}
+            checked={crew.color === "black"}
+          />
+          <label htmlFor="black">Black</label>
+        </div>
         <br />
         <label htmlFor="desc">Description</label>
         <input
